@@ -1,7 +1,5 @@
 <?php
 
-use App\Model\AdminModel;
-
 return [
 
     /*
@@ -48,16 +46,6 @@ return [
             'provider' => 'users',
             'hash' => false,
         ],
-        'admins' => [
-            'driver' => 'session',
-            'provider' => 'admins',
-        ],
-
-        'admins-api' => [
-            'driver' => 'token',
-            'provider' => 'admins',
-            'hash' => false,
-        ],
     ],
 
     /*
@@ -82,10 +70,6 @@ return [
             'driver' => 'eloquent',
             'model' => App\User::class,
         ],
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Model\AdminModel::class,
-        ]
 
         // 'users' => [
         //     'driver' => 'database',
@@ -113,11 +97,6 @@ return [
             'provider' => 'users',
             'table' => 'password_resets',
             'expire' => 60,
-        ],
-        'admins' => [
-            'provider' => 'admins',
-            'table' => 'password_resets',
-            'expire' => 15,
         ],
     ],
 
