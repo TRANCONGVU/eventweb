@@ -12,42 +12,36 @@
 */
 
 
-Route::get('trangchu', [
-	'as' =>'trangchu',
-	'uses' => 'Controller_1@get_trangchu'
-]);
-Route::get('about', [
-	'as' =>'about',
-	'uses' => 'Controller_1@get_about'
-]);
+Route::get('/trangchu', function() {
+	return view('pages.trangchu');
+});
+Route::get('/', function() {
+	return view('pages.trangchu');
+});
 
-Route::get('sukien', [
-	'as' =>'sukien',
-	'uses' => 'Controller_1@get_sukien'
-]);
+Route::get('/about', function() {
+	return view('pages.about');
+});
+Route::get('/sukien', function() {
+	return view('pages.sukien');
+});
+Route::get('/thietbi', function() {
+	return view('pages.thietbi');
+});
+Route::get('/nhansu', function() {
+	return view('pages.nhansu');
+});
+Route::get('/tintuc', function() {
+	return view('pages.tintuc');
+});
+Route::get('/lienhe', function() {
+	return view('pages.lienhe');
+});
+Route::get('/team', function() {
+	return view('pages.team');
+});
 
-Route::get('thietbi', [
-	'as' =>'thietbi',
-	'uses' => 'Controller_1@get_thietbi'
-]);
-
-Route::get('nhansu', [
-	'as' =>'nhansu',
-	'uses' => 'Controller_1@get_nhansu'
-]);
-
-Route::get('lienhe', [
-	'as' =>'lienhe',
-	'uses' => 'Controller_1@get_lienhe'
-]);
-
-Route::get('team', [
-	'as' =>'team',
-	'uses' => 'Controller_1@get_team'
-]);
-Route::get('tintuc', [
-	'as' =>'tintuc',
-	'uses' => 'Controller_1@get_tintuc'
-]);
-
+Route::get('/detai', function() {
+	return view('pages.detai');
+});
 

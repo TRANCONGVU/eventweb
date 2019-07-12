@@ -17,8 +17,8 @@
 }
 .logo img{
     width: 200px;
-    height: 100px;
-    object-fit: contain;
+    height: 95px;
+    object-fit: scale-down;
 }
 .logo {
     left: 0;
@@ -99,4 +99,105 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.detai-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.detai-title span:nth-child(1) {
+    color: #c92127;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.detai-title span:nth-child(2) {
+    color: grey;
+    font-size: 22px;
+    margin : 5px 0 20px 0;
+    position: relative;
+
+}
+.detai-title span:nth-child(2)::after{
+    content : "";
+    position: absolute;
+    width: 200px;
+    height: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    left: 38%;
+    bottom: -10px;
+}
+.detai-title span:nth-child(3) {
+    color: #000;
+    font-size: 15px;
+    margin : 5px;
+    text-transform: uppercase;
+
+
+}
+.detai-img {
+    width: 100%;
+    height: 100%;
+    margin : 10px ;
+}
+.detai-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.detai-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.detai-content span {
+    font-size: 16px;
+    color: #000;
+    margin : 10px 0;
+}
+.detai-link {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.detai-link span:nth-child(1){
+    color: #c92127;
+}
+.botom-title {
+    position: relative;
+}
+.botom-title span {
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    bottom: 0px;
+    background-color: gray;
+}
+.detai-contact {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.detai-contact span:nth-child(1) {
+    color: #c92127;
+}
+.lienhe span {
+    font-size: 20px;
+    margin : 10px 0;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border : 1px solid #dedede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 5px;
+}
+.icon i {
+    font-size: 20px;
 }
